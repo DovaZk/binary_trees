@@ -65,4 +65,21 @@ int max(int a, int b);
 int aux_is_perfect(const binary_tree_t *tree, int refer_d, int level);
 int refer_d_left(const binary_tree_t *tree);
 
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
+				     const binary_tree_t *second);
+void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
+int binary_tree_is_complete(const binary_tree_t *tree);
+binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
+binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
+int binary_tree_is_bst(const binary_tree_t *tree);
+int greater(const binary_tree_t *tree, int n);
+int check_less_greater(const binary_tree_t *tree, int n, int flag);
+bst_t *bst_insert(bst_t **tree, int value);
+bst_t *array_to_bst(int *array, size_t size);
+bst_t *bst_search(const bst_t *tree, int value);
+int binary_tree_is_avl(const binary_tree_t *tree);
+avl_t *avl_insert(avl_t **tree, int value);
+avl_t *avl_recu(avl_t **tree, int value);
+void balancer(avl_t **tree, int value);
+
 #endif /* BINARY_TREES_H */
